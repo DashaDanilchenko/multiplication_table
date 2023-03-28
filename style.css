@@ -1,31 +1,30 @@
 .container_reply {
     display: flex;
     flex-direction: column;
-    width: 280px;
-    height: 70px;
-    margin: 50px auto;
+    margin: 100px auto;
     font-weight: 600;
 }
 
 .container {
+    margin: 100px auto;
     display: flex;
-    width: 280px;
-    height: 30px;
+    color: rgb(68, 126, 94);
+    font-size: 30px;
 }
 
 .num {
-    background: rgb(214, 214, 214);
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
+    background: rgb(126, 236, 175);
+    border-radius: 20px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .sing {
-    width: 30px;
-    height: 30px;
+    width: 80px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,46 +36,59 @@ form {
 
 input {
     box-sizing: border-box;
-    outline:none
+    border: none;
+    color: rgb(68, 126, 94);
+    font-size: 30px; 
+    text-align: center;
 }
 
-.button {
+button {
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 30px;
-    margin-left: 30px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.reply_next {
-    display: flex;
-}
-
-.reply {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 150px;
-    height: 30px;
-    margin-top: 10px;
+    height: 50px;
+    margin-left: 30px;
     border: 1px solid black;
     border-radius: 5px;
+    border: none;
+    background: rgb(200, 155, 243);
+    color: rgb(99, 70, 126);
+    font-size: 30px;
 }
 
-.next {
+.reply_next {
+    margin: 30px auto;
     display: flex;
+}
+
+.reply {
+    display: none;
+    position: absolute;
     justify-content: center;
     align-items: center;
-    width: 60px;
-    height: 30px;
-    margin-top: 10px;
-    border: 1px solid black;
+    width: 150px;
+    height: 100px;
+    top: 50px;
+    left: calc(50% - 75px);
     border-radius: 5px;
-    cursor: pointer;
-    justify-items: auto;
-    margin-left: 70px;
+    color: rgb(209, 198, 45);
 }
+
+.watch {
+    display: flex;
+}
+
+i {
+    transform: scale(3);
+}
+
+.red {
+    color: rgb(214, 73, 73);
+}
+
+::placeholder {
+    color: rgb(68, 126, 94);
+    font-size: 20px;
+  }

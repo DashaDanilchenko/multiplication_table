@@ -6,9 +6,10 @@ let number_result = number_one * number_too
 
 function audit() {
     const reply = document.querySelector('.reply')
+    reply.classList.add('watch')
     dataDefinition()
-    .then(reply.innerHTML = 'Вірно')
-    .catch(error => reply.innerHTML = error.message)
+    .then(reply.innerHTML = '<i class="fa-solid fa-face-smile"></i>' )
+    .catch(error => reply.innerHTML = error.message )
 }
 
 function dataDefinition() {
@@ -16,7 +17,7 @@ function dataDefinition() {
 
     const promise = new Promise((resolve, reject) => {
         if (result !== number_result) {
-            reject({status:'not ok', message: 'Не вірно!'})
+            reject({status:'not ok', message: '<i class="fa-solid fa-face-frown red"></i>'})
         }
         resolve({status:'ok', result})
     })
@@ -29,9 +30,9 @@ function reboot() {
 
 const one = document.querySelector('.one')
 const too = document.querySelector('.too')
-const button = document.querySelector('.button')
+const button = document.querySelector('#verify')
 button.addEventListener('click', audit)
-const next = document.querySelector('.next')
+const next = document.querySelector('#next')
 next.addEventListener('click', reboot)
 
 one.innerHTML = `${number_one}`

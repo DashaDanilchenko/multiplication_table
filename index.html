@@ -6,23 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/52fd4b3de4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="container_reply">   
+<div class="container_reply"> 
+    <div class="reply"></div> 
    <div class="container">
         <div class="num one"></div>
         <div class ='sing'>x</div>
         <div class="num too"></div>
         <div class ='sing'>=</div>
-        <form>
-            <input class="num result" tabindex="0">
-            <div class ='button' tabindex="1">Перевірити</div>
-        </form>
+        <input type="text" placeholder="Enter" class="result num" tabindex="0">
     </div>
     <div class="reply_next">
-        <div class="reply"></div>
-        <div class ='sing next' tabindex="2">Далі</div>
+        <button id="verify" tabindex="1">Verify</button>
+        <button id="next" tabindex="2">Next</button>
     </div>
 </div>
 
