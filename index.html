@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Multiplication table</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/52fd4b3de4.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/52fd4b3de4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container_reply">
+      <div class="reply" id="multiplication"></div>
+      <div class="reply" id="application"></div>
+      
+      <div class="wrapper">
+        <div class="container">
+          <span class="num application_one"></span>
+          <span class="sing">+</span>
+          <span class="num application_too"></span>
+          <span class="sing">=</span>
+          <input
+            type="text"
+            placeholder="Enter"
+            class="result_application num"
+          />
+        </div>
 
-<div class="container_reply"> 
-    <div class="reply"></div> 
-   <div class="container">
-        <div class="num one"></div>
-        <div class ='sing'>x</div>
-        <div class="num too"></div>
-        <div class ='sing'>=</div>
-        <input type="text" placeholder="Enter" class="result num" tabindex="0">
-    </div>
-    <div class="reply_next">
-        <button id="verify" tabindex="1">Verify</button>
-        <button id="next" tabindex="2">Next</button>
-    </div>
-</div>
+        <button id="verify_application">Verify</button>
+      </div>
 
-</body>
-    <script src="./script.js"></script>
+      <div class="wrapper">
+        <div class="container">
+          <span class="num one"></span>
+          <span class="sing">x</span>
+          <span class="num too"></span>
+          <span class="sing">=</span>
+          <input type="text" placeholder="Enter" class="result num" />
+        </div>
+
+        <button id="verify">Verify</button>
+      </div>
+
+    </div>
+    <button id="next">Next</button>
+  </body>
+  <script src="./script.js"></script>
 </html>
